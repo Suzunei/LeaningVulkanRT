@@ -7,7 +7,7 @@
 
 namespace Vulkan
 {
-	class Window final 
+	class Window final
 	{
 	public:
 
@@ -30,6 +30,16 @@ namespace Vulkan
 
 		//Callbacks
 		std::function<void()> DrawFrame;
+		std::function<void(int key, int scancode, int action, int mods)> OnKey;
+		std::function<void(double xpos, double ypos)> OnCursorPosition;
+		std::function<void(int button, int action, int mods)> OnMouseButton;
+		std::function<void(double xoffset, double yoffset)> Onscroll;
+
+		//Methods
+		void Close();
+		bool IsMinimized()const;
+		void Run();
+		void WaitForEvents()const;
 
 
 	private:

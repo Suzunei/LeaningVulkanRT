@@ -7,7 +7,7 @@
 
 namespace Vulkan
 {
-	class Window final 
+	class Window final
 	{
 	public:
 
@@ -30,6 +30,7 @@ namespace Vulkan
 
 		//Callbacks
 		std::function<void()> DrawFrame;
+		std::function<void(int key, int scancode, int action, int mods)> OnKey;
 
 
 	private:

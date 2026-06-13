@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <string>
 
-//´°¿ÚÉèÖÃ
+//çª—å£è®¾ç½®
 namespace Vulkan
 {
 	struct WindowConfig final

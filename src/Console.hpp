@@ -19,7 +19,7 @@ namespace Utilities
 		template <class Action>
 		static void Write(const Severity severity, const Action action)
 		{
-			const auto atrributes = SetColorBySeverity(severity);
+			const auto attributes = SetColorBySeverity(severity);
 			action();
 			SetColorByAttributes(attributes);
 		}

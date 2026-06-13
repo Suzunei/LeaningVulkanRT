@@ -43,7 +43,7 @@ void Console::SetColorByAttributes(const int attributes) noexcept
 {
 #ifdef WIN32
 	const HANDLE hConsole = GetStdHandle(STD_ERROR_HANDLE);
-	SetConsoleTextAttribute(hConsole, attributes);
+	SetConsoleTextAttribute(hConsole, static_cast<WORD>(attributes));
 #endif
 }
 

@@ -16,3 +16,14 @@ Release/
 *.ilk
 *.log
 *.tlog/
+
+# CMake
+build/
+out/
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
